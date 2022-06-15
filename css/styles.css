@@ -1,3 +1,4 @@
+
 :root {
     --primary-text-color: #757575;
     --title-text-color:  #212121;
@@ -8,8 +9,11 @@
     --section-background-color: #F5F4FA;
     --logo-title-color: #000000;
     --address-color:rgba(255, 255, 255, 0.6);
+    --border-color: #ECECEC;
+   
 
  }
+
 
             /* body */
 body{
@@ -20,6 +24,50 @@ body{
     letter-spacing: 0.03em;
 
 }
+
+/* -------------utulities------------- */
+.link{
+  text-decoration: none;
+}
+.list{
+  padding: 0;
+  margin: 0;
+  
+  list-style: none;
+  text-decoration: none;
+  
+}
+
+/*----------- навігація---------- */
+
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+ 
+
+}
+
+
+
+.page-header {
+  display: flex;
+  align-items: center;
+
+  height: 80px;
+  border-bottom: 1px solid var(--border-color);
+  
+
+   }
+   
+
+
+
+
+
 
                /* LOGO */
 .logo-web{
@@ -42,6 +90,9 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.2;
 text-decoration:none ;
+
+
+
 }
 
 .logo-footer {
@@ -56,25 +107,44 @@ text-decoration: none;
 
 }
 
-/* -------------utulities------------- */
-.link{
-    text-decoration: none;
-}
-.list{
-  
-    list-style: none;
-    text-decoration: none;
-    
+.nav{
+  display: flex;
 }
 
-/*----------- навігація---------- */
+
+.auth{
+  display: flex;
+  margin-left: auto;
+ 
+}
+
+.header{
+  display: flex;
+  align-items: center;
+ 
+  margin-left: 93px;
+}
+
 .header-link{
 color: var(--title-text-color);
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
+
+
+
 }
+
+.header .item + .item {
+  margin-left: 50px;
+
+}
+
+.auth .item + .item{
+  margin-left: 50px;
+}
+
 
 
 .contacts{
@@ -83,6 +153,7 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
+
 }
 
 /* ---------ховер---------- */
@@ -102,18 +173,29 @@ width: 1600px;
 height: 600px;
 left: 0px;
 top: 80px;
+text-align: center;
+
 }
 
 .hero-title{
     color: var(--white-color);
-
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
-
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
+
+margin-top: 0px;
+margin-bottom: 30px;
+margin-left: 0px;
+margin-right: 0px;
+padding-top: 200px;
+
+
+
+
+
 }
     
 .hero-button{
@@ -128,18 +210,16 @@ font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.06em;
+border-radius: 4px solid var(--accent-color);
+
+margin-top: 30px;
+width: 200px;
+height: 50px;
+
 
 }
 
-/* Переваги */
-.section-title{
- color: var(--title-text-color);   
-font-weight: 700;
-font-size: 36px;
-line-height: 1.17;
-text-align: center;
 
-}
 
 .feauters-title{
 color: var(--title-text-color);
@@ -148,6 +228,9 @@ font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
+
+margin-top: 0px;
+margin-bottom: 10px;
 }
 
 .feauters-text{
@@ -155,27 +238,116 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
+
+margin-top: 0px;
+margin-bottom: 0px;
 }
+
+.main-feauters{
+  display: flex;
+  margin-top: 95px;
+
+  
+}
+
+.feauters-item{
+  width: 270px;
+  height: 101px;
+
+
+}
+
+.feauters-item + .feauters-item{
+  margin-left: 30px;
+}
+
+
+/* Чим ми займаємося */
+
+.section-title{
+  color: var(--title-text-color);
+ font-weight: 700;
+ font-size: 36px;
+ line-height: 1.17;
+ text-align: center;
+ 
+ margin-top: 95px;
+ margin-bottom: 50px;
+ 
+ }
+
+ .benefits{
+   display: flex;
+  
+   
+ }
+
+ .items + .items{
+   margin-left: 30px;
+   
+ }
+
+
 
 /* Команда */
 .team{
     background-color: var(--section-background-color);
+    margin-top: 95px;
     
 }
 
-.team-title{
+.team-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  margin-top: 94px;
+  margin-bottom: 50px;
+  padding-top: 94px;
+  
+}
+
+
+
+
+.team-name {
 color: var(--title-text-color);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
+text-align: center;
+
+margin-top: 30px;
+margin-bottom: 10px;
+
 
 }
+
 
 .team-text{ 
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
+    text-align: center;
 
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.team-flex{
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.team-items{
+  background-color: #ffffff;
+}
+
+.team-items + .team-items{
+  margin-left: 30px;
 }
     
 
@@ -187,13 +359,32 @@ line-height: 1.19;
     line-height: 1.71;
  
   } 
+
+  .logo-footer{
+    display: block;
+    padding-top: 60px;
+    margin-bottom: 20px;
+    
+  }
+
+
   .address{
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
+
+padding-bottom: 60px;
   }
+
+.address-items + .address-items{
+  margin-top: 10px;
+}
+
+
+
+  
   
   
   

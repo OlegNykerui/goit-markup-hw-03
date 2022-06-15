@@ -15,64 +15,67 @@
 </head>
 <body>
 
+    <div class="container">
     <!-- хедер -->
- <header>
-<nav>
+ <header class="page-header">
+     
+         <nav class="nav">
         <a class="logo " href="./index.html"><span class="logo-web link">Web</span>Studio</a>
-    <ul class="list">
-        <li> <a class="header-link link current" href="./index.html">Студия</a>  </li>
-        <li> <a class="header-link link" href="./portfolio.html">Портфолио</a> </li>
-        <li> <a class="header-link link" href="">Контакты</a> </li>
+    <ul class="list header">
+        <li class="item"> <a class="header-link link current" href="./index.html">Студия</a>  </li>
+        <li class="item"> <a class="header-link link" href="./portfolio.html">Портфолио</a> </li>
+        <li class="item"> <a class="header-link link" href="">Контакты</a> </li>
     </ul>
 </nav>
 
-<ul class="list">
-    <li><a class="contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-    <li><a class="contacts link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+<ul class="list auth">
+    <li class="item"><a class="contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+    <li class="item"><a class="contacts link" href="tel:+380961111111">+38 096 111 11 11</a></li>
 </ul>
 
- </header>
 
+ </header>
+</div>
      <!-- герой -->
- <main>
-     <section class="hero">
-         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+ <main >
+     <section class="hero container"  >
+         <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
          <button class="hero-button" type="button">Заказать услугу</button>
      </section>
 
      <!-- Переваги -->
-     <section class="feauters">
-         <h2 class="section-title">Наші переваги</h2>
-         <ul class="list">
-             <li>
+     <section class="feauters container ">
+         <h2 hidden class="section-title">Наші переваги</h2>
+         <ul class="main-feauters list">
+             <li class="feauters-item">
         <h3 class="feauters-title">Внимание к деталям</h3>
         <p class="feauters-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
 
-            <li>
+            <li class="feauters-item">
          <h3 class="feauters-title">Пунктуальность</h3>
          <p class="feauters-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
            </li>
 
-           <li>
+           <li class="feauters-item">
          <h3 class="feauters-title">Планирование</h3>
           <p class="feauters-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
        </li>
 
-       <li>
+       <li class="feauters-item">
           <h3 class="feauters-title">Современные технологии</h3>
            <p class="feauters-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
        </li>
          </ul>
-     </section>
+     </section >
 
      <!-- Чим ми займаємося -->
-     <section>
+     <section class="container">
      <h2 class="section-title">Чем мы занимаемся</h2> 
-     <ul class="list">
-         <li><img src="./images/img1.jpg" alt="Розробка контенту" width="370" height="294"> </li>
-         <li><img src="./images/box2.jpg" alt="Розробка дизайну" width="370" height="294"></li>
-         <li> <img src="./images/img3.jpg" alt="Розробка додатків" width="370" height="294"></li>
+     <ul class="benefits list">
+         <li class="items"><img src="./images/img1.jpg" alt="Розробка контенту" width="370" height="294"> </li>
+         <li class="items"><img src="./images/box2.jpg" alt="Розробка дизайну" width="370" height="294"></li>
+         <li class="items"> <img src="./images/img3.jpg" alt="Розробка додатків" width="370" height="294"></li>
      </ul>
      
      </section>
@@ -80,34 +83,40 @@
 
      <!-- Наша команда -->
      <section class="team">
-         <h2 class="section-title">Наша команда</h2>
+         <div class="container">
+            <h2 class="team-title">Наша команда</h2>
          
-         <ul class="list">
-             <li>
-         <img src="./images/img-11.jpg" alt="Фото Ільї Демяненко" width="270" height="260">
-            <h3 class="team-title" >Игорь Демьяненко</h3>
-            <p class="team-text">Product Designer</p>
-            </li>
+            <ul class="team-flex list">
+                <li class="team-items">
+            <img src="./images/img-11.jpg" alt="Фото Ільї Демяненко" width="270" height="260">
+               <h3 class="team-name" >Игорь Демьяненко</h3>
+               <p class="team-text">Product Designer</p>
+               </li>
+   
+               <li class="team-items">
+                   <img src="./images/img-12.jpg" alt="Фото Ольга Репина" width="270" height="260">
+                   <h3 class="team-name">Ольга Репина
+   
+                   </h3>
+                   <p class="team-text">Frontend Developer</p>
+               </li>
+   
+               <li class="team-items">
+                   <img src="./images/img-13.jpg" alt="Фото Николай Тарасов" width="270" height="260">
+                   <h3 class="team-name">Николай Тарасов</h3>
+                   <p class="team-text">Marketing</p>
+               </li>
+               <li class="team-items">
+                   <img src="./images/img-14.jpg" alt="Фото Михаил Ермаков" width="270" height="260">
+                   <h3 class="team-name">Михаил Ермаков</h3>
+                   <p class="team-text">UI Designer</p>
+               </li>
+            </ul>
 
-            <li>
-                <img src="./images/img-12.jpg" alt="Фото Ольга Репина" width="270" height="260">
-                <h3 class="team-title">Ольга Репина
 
-                </h3>
-                <p class="team-text">Frontend Developer</p>
-            </li>
 
-            <li>
-                <img src="./images/img-13.jpg" alt="Фото Николай Тарасов" width="270" height="260">
-                <h3 class="team-title">Николай Тарасов</h3>
-                <p class="team-text">Marketing</p>
-            </li>
-            <li>
-                <img src="./images/img-14.jpg" alt="Фото Михаил Ермаков" width="270" height="260">
-                <h3 class="team-title">Михаил Ермаков</h3>
-                <p class="team-text">UI Designer</p>
-            </li>
-         </ul>
+         </div>
+         
 
      </section>
 
@@ -117,18 +126,21 @@
 <!-- футер -->
 
 <footer class="footer">
-    <a class="logo-footer" href="./index.html"><span class="logo-web link">Web</span>Studio</a>
-    <address class="address">
-        <ul class="list">
-            <li>
-               <a class="address-footer link" href="https://www.google.com.ua/maps/place/бульвар+Лесі+Українки,+26,+Київ,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858" 
-               target="_blank" rel="noopener noreferrer" >г. Киев, пр-т Леси Украинки, 26</a>  
-            </li>
-            <li><a class="footer-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-             <li><a class="footer-contacts link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+    <div class="container">
+        <a class="logo-footer" href="./index.html"><span class="logo-web link">Web</span>Studio</a>
+        <address class="address">
+            <ul class="footer-list list">
+                <li class="address-items">
+                   <a class="address-footer link" href="https://www.google.com.ua/maps/place/бульвар+Лесі+Українки,+26,+Київ,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858" 
+                   target="_blank" rel="noopener noreferrer" >г. Киев, пр-т Леси Украинки, 26</a>  
+                </li>
+                <li class="address-items"><a class="footer-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                 <li class="address-items"><a class="footer-contacts link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+    
+        </address>
 
-    </address>
+    </div>
 
     
     
