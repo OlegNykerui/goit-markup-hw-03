@@ -51,16 +51,13 @@ body{
 
 }
 
-.border{
-  border-bottom: 1px solid var(--border-color);
 
-}
 
 
 .page-header  {
-  display: flex;
-  align-items: center;
-  height: 80px;
+  
+  border-bottom: 1px solid #ECECEC;
+  
 
    }
    
@@ -107,6 +104,10 @@ text-decoration: none;
 
 .nav{
   display: flex;
+  text-align: center;
+  height: 80px;
+  align-items: center;
+
   
 }
 
@@ -438,7 +439,7 @@ background-color: var(--section-background-color);
 font-family:inherit;
 font-weight: 500;
 font-size: 16px;
-line-height: 1.62;
+line-height: 1.63; 
 cursor: pointer;
 border: none;
 border-radius: 4px;;
