@@ -94,17 +94,7 @@ text-decoration:none ;
 
 }
 
-.logo-footer {
-font-family: 'Raleway';
-font-style: normal;  
-color: var(--white-color);
-font-weight: 700;
-font-size: 26px;
-line-height: 1.93;
-text-decoration: none;
 
-
-}
 
 .nav{
   display: flex;
@@ -341,7 +331,7 @@ line-height: 1.19;
 text-align: center;
 
 margin-bottom: 10px;
-
+margin-top: 0px;
 
 
 }
@@ -394,11 +384,21 @@ padding-bottom: 30px;
  
   } 
 
+
+
+
+
   .logo-footer{
     display: block;
     margin-bottom: 20px;
 
-   
+    font-family: 'Raleway';
+      font-style: normal;
+      color: var(--white-color);
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.19;
+      text-decoration: none;
   }
 
 
@@ -443,7 +443,7 @@ letter-spacing: 0.03em;
    justify-content: center;
 
  
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
  }      
 
